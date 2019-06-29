@@ -1,0 +1,102 @@
+﻿
+@model FinalProject.BLL.ViewModels.UsersVM
+
+@{
+    ViewBag.Title = "profile";
+    Layout = "~/Areas/UserArea/Views/Shared/_layoutUser.cshtml";
+}
+
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>الصفحة الشخصية</h2>
+                <ol class="breadcrumb header-bradcrumb">
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "index", "Home")</li>
+                    <li class="active">الصفحة الشخصية</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container m-5">
+    <div class="row">
+
+        <div class="col-md-6 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">  <h4>البيانات الشخصية </h4></div>
+                <div class="panel-body">
+
+                    <div class="box box-info">
+
+                        <div class="box-body">
+                            <div class="col-sm-6">
+                                <div align="center">
+                                    <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">
+
+                                    <input id="profile-image-upload" class="hidden" type="file">
+                                    <!--Upload Image Js And Css-->
+
+
+                                </div>
+
+                                <br>
+
+                                <!-- /input-group -->
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 style="color:#00b1b1;">@Model.user_name </h4></span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr style="margin:5px 0 5px 0;">
+
+
+                            <div class="col-sm-5 col-xs-6 tital ">اسم المستخدم:</div><div class="col-sm-7 col-xs-6 ">@Model.user_name</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">العمر</div><div class="col-sm-7"> @Model.age</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">البريد الالكتروني</div><div class="col-sm-7"> @Model.email</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">رقم التليفون</div><div class="col-sm-7">@Model.phone</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">العنوان:</div><div class="col-sm-7">@Model.address</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">رقم البطاقة</div><div class="col-sm-7">@Model.national_id</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                            <div class="col-sm-5 col-xs-6 tital ">اسم المؤهل</div><div class="col-sm-7">@Model.qualification_name</div>
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+                           
+
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        @Html.ActionLink("تسجيل خروج", "SignUserOut", "Home", new { area = "UserArea"}, new { @class="btn btn-primary" })
+    </div>
+</div>
+
+
+        @section scripts{
+        <script>$(function() {
+    $('#profile-image1').on('click', function() {
+        $('#profile-image-upload').click();
+    });
+});</script>
+}

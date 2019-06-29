@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.xx = ViewBag.li;
+
+
+}
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>عن المركز</h2>
+                <ol class="breadcrumb header-bradcrumb">
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "index", "Home")</li>
+                    <li class="active">عن المركز</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>عن المركز</h2>
+                <p class="pargraph">مركز الدراسات الوطنية هو مركز حكومي خدمي تدريبي تنموي يتبع ديوان عام محافظة المنوفية تم إنشاؤه عام 1994م.</p>
+
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <div class="col-md-6">
+                <img src="~/Areas/UserArea/images/WhatsApp Image 2019-06-23 at 12.04.24 PM.jpeg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-6">
+                <h4>أهداف المركز</h4>
+                <ul>
+                    <li class="list-group">تدريب القيادات وتنمية معارفهم وزيادة خبراتهم وصقل مهاراتهم .</li>
+                    <li class="list-group">التربية الفكرية للنشئ والشباب وتنمية مهاراتهم الفكرية والابداعية</li>
+                    <li class="list-group">المركز معتمد كمركز تدريبى على المستوى الاقليمى من وزارتى التنمية المحلية والتخطيط والاصلاح الادارى</li>
+                    <li class="list-group">تدريب وتنفيذ كافة البرامج التنفيذية والتثقيفية للعاملين بالجهاز الادارى بهدف تطوير الفكر الادارى ونشر الوعى التدريبى لدى العاملين.</li>
+                    <li class="list-group">المركز معتمد كمركز تدريبى على المستوى القومى فى التدريب الادارى واللغات وعلوم الحاسب الالى من الجهاز المركزى للتنظيم والادارة ويمنح المتدرب شهادة معتمدة</li>
+                </ul>
+            </div>
+        </div> 		<!-- End row -->
+    </div>   	<!-- End container -->
+</section>   <!-- End section -->
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center ">
+                <h2> الهيكل التنظيمي للمركز</h2>
+                <div class="border"></div>
+            </div>
+            <div class="col offset-2 ">
+                <img class="img-responsive mr-5" id="myimg" src="~/Areas/UserArea/images/WhatsApp Image 2019-06-22 at 2.25.42 PM.jpg" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>موقع المركز</h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+
+            <div class="col-12 col-lg-9 center-location">
+
+                <div id="map" style="width:100%; height: 400px;"></div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Uluru
+                        var uluru = { lat: 30.565960, lng: 31.011985 };
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), { zoom: 15, center: uluru });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({ position: uluru, map: map });
+                    }
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrawYl-M-sDwPCIaagVREMHt4gIeluozw&callback=initMap">
+                </script>
+
+            </div>
+
+        </div> 		<!-- End row -->
+    </div>   	<!-- End container -->
+</section>   <!-- End section -->
+<div class="container">
+    <div class="contact-details col-md-6 ">
+        <h3>تواصل معنا</h3>
+        <ul class="contact-short-info">
+
+            <li>
+                <i class="tf-ion-android-phone-portrait"></i>
+                <span>هاتف: 048/2229094</span>
+            </li>
+            <li>
+                <i class="tf-ion-android-phone-portrait"></i>
+                <span>محمول: 01099017867</span>
+            </li>
+            <li>
+                <i class="tf-ion-android-phone-portrait"></i>
+                <span>وتس اب: 01099017867</span>
+            </li>
+            <li>
+                <i class="tf-ion-android-globe"></i>
+                <span>فاكس: 048/2313550</span>
+            </li>
+            <li>
+                <i class="tf-ion-android-mail"></i>
+                <span>
+                    البريد الالكتروني: Nscc.eg@gmail.com
+                </span>
+            </li>
+        </ul>
+        <!-- Footer Social Links -->
+        <div class="social-icon">
+            <ul>
+                <li><a href="https://www.facebook.com/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9-%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%88%D8%A7%EF%BB%B9%D8%A8%D8%AF%D8%A7%D8%B9-%D8%A8%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9-802666513164431/"><i class="tf-ion-social-facebook"></i></a></li>
+              
+            </ul>
+        </div>
+        <!--/. End Footer Social Links -->
+    </div>
+</div>

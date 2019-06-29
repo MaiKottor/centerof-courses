@@ -1,0 +1,55 @@
+﻿
+@model  FinalProject.BLL.ViewModels.instructorVM
+@using FinalProject.BLL.ViewModels
+@{
+    ViewBag.Title = "index";
+}
+
+
+
+<div id="myPartial">
+  @*  @Html.Partial("instructorPartial", Model)*@
+</div>
+<div id="DivGetAllInstructors"></div>
+<div id="divLoading" style="display:none;align-content:center">
+    @*Loading..*@
+    <img src="~/Images/loader2.gif"  width="100px" height="100px" />
+</div>
+@section Scripts{
+    <script>
+
+    $(document).ready(function () {
+
+        debugger;
+        $("#DivGetAllInstructors").load("/AdminArea/Instructor/GetAllInstructors")
+
+        //$("#btnEdit").on("click", function () {
+           
+        //    let id = $("#Hiddenid").val();
+
+        //    $("#myPartial").load("/AdminArea/Instructor/Edit/" + id)
+        //})
+        //$("#btnAdd").on("click", function () {
+        //    debugger;
+        //    $("#myPartial").load("/AdminArea/Instructor/AddInstructor/" )
+        //})
+
+        //$("#btnDelete").click(function () {
+        //    debugger;
+        //    let data = $("#Hiddenid").val();
+            
+        //    $.ajax({
+        //        type: "POST",
+        //        data: data,
+        //        url: "/AdminArea/Instructor/delete/"+data,
+        //        success: function (response) {
+                    
+        //            alert("data deleted");
+                     
+        //        }
+
+        //    })
+        //})
+    })
+    </script>
+}

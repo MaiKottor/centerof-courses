@@ -1,0 +1,32 @@
+﻿@model List<FinalProject.BLL.ViewModels.CategoryVM>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div>
+    
+    <table class="table table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <th>الرقم</th>
+                <th>اسم القسم</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.category_id
+                    </td>
+                    <td>
+                        @item.category_name
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

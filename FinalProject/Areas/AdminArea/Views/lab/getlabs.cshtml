@@ -1,0 +1,73 @@
+﻿@model List<FinalProject.BLL.ViewModels.labVM>
+@{
+    ViewBag.Title = "getlabs";
+}
+
+<div class="container">
+
+
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_lab_btn" class="btn btn-primary " />
+        <div id="edit">
+
+        </div>
+    </div>
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <th>اسم القاعة</th>
+                <th>رقم القاعة </th>
+                <th>رقم دور القاعة</th>
+                <th>وصف القاعة</th>
+                <th>الخدمة</th>
+                <th>حذف</th>
+                <th>تعديل</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.lab_name</td>
+                    <td>@item.lab_number</td>
+                    <td>@item.floor_number</td>
+                    <td>@item.description</td>
+                    <td>@item.service_id</td>
+                    <td>@Html.ActionLink("حذف", "remove", "lab", new { id = item.lab_id }, new { @class = "btn btn-danger" })</td>
+                    <td> <input type="button" value="تعديل" class="btn btn-primary" id="edit" onclick="showform(@item.lab_id)" /></td>
+                                    </tr>
+
+
+                    }
+
+            </tbody>
+
+    </table>
+    @section scripts
+    {
+        <script>
+            $(document).ready(function () {
+                $("#add_lab_btn").click(function () {
+
+                    $("#edit").load("/AdminArea/lab/Addlab")
+                    //$("#add_lab_btn").hide();
+
+
+                })
+
+            })
+            function showform(id) {
+
+                $("#edit").load("/AdminArea/lab/editlab/" + id)
+                //$("#add_lab_btn").hide();
+            }
+
+
+        </script>
+
+    }
+
+</div>

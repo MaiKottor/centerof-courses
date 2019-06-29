@@ -1,0 +1,73 @@
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\EntityFramework.dll
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\EntityFramework.xml
+C:\Users\User35\Desktop\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User35\Desktop\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.csprojResolveAssemblyReference.cache
+C:\Users\User35\Desktop\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+C:\Users\User35\Desktop\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\EntityFramework.dll
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\EntityFramework.xml
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+F:\bbbbb\20-6-2019\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\EntityFramework.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\EntityFramework.xml
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CopyComplete
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\EntityFramework.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\EntityFramework.xml
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CoreCompileInputs.cache
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CopyComplete
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+C:\Users\ali\Desktop\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\EntityFramework.dll
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\EntityFramework.xml
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CopyComplete
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\EntityFramework.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\EntityFramework.xml
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.csproj.CopyComplete
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject.DAL\obj\Debug\FinalProject.DAL.pdb

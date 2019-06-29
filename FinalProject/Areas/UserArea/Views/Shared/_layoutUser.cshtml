@@ -1,0 +1,164 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Bingo One page parallax responsive HTML Template ">
+    <meta name="author" content="Themefisher.com">
+    <title>مركز الدراسات الوطنية و الابداع</title>
+
+    <!-- Mobile Specific Meta
+      ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+    <!-- CSS
+      ================================================== -->
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/css/settings.css">
+    <!-- RS5.0 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/plugins/revo-slider/css/navigation.css">
+    <!-- Themefisher Icon font -->
+    <link rel="stylesheet" href="~/Areas/UserArea/plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="~/Areas/UserArea/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="~/Areas/UserArea/plugins/lightbox2/dist/css/lightbox.min.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="~/Areas/UserArea/plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="~/Areas/UserArea/plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="~/Areas/UserArea/css/colors/light-green.css" title="light-green">
+    <link href="~/Content/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link href="~/Areas/UserArea/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/UserArea/css/style2.css" rel="stylesheet" />
+    <link href="~/Areas/UserArea/css/main.css" rel="stylesheet" />
+</head>
+
+<body id="body">
+
+    <!--
+      Start Preloader
+      ==================================== -->
+    <div id="preloader">
+        <div class='preloader'> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
+    </div>
+    <!--
+      End Preloader
+      ==================================== -->
+    <!--
+    Fixed Navigation
+    ==================================== -->
+    <header class="navigation navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <!-- /responsive nav button -->
+                @*<a class="navbar-brand logo" href="index.html">
+                    <img class="logo-default" src="~/Areas/UserArea/images/logo.jpg" /> <img class="logo-white" src="~/Areas/UserArea/images/logo.jpg" alt="logo" />
+                </a>*@
+                <!-- /logo -->
+            </div>
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul id="nav" class="nav navbar-nav menu">
+
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "Index", "Home")</li>
+                    <li>@Html.ActionLink("الاخبار", "GetAllNews", "UserNews")</li>
+
+                    <li>@Html.ActionLink("عن المركز", "Index", "AboutUsPage")</li>
+
+
+                    @*<a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+                                       @Html.DropDownList("course", ViewBag.xx as SelectList,new {@class="mydrop" })
+
+        </a>
+            <span class="caret"></span>*@
+
+
+
+                    <li class="dropdown">
+
+                        @Html.ActionLink("الدورات التدريبية", "GetCategsCourses", "UserCourse")
+               
+                    </li>
+                    <li>@Html.ActionLink("الصفحة الشخصية ", "profile", "Home")</li>
+
+
+
+
+                </ul>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+    <!--
+    End Fixed Navigation
+    ==================================== -->
+  
+
+    @RenderBody()
+
+         <footer id="footer" class="bg-one">
+
+        <div class="footer-bottom">
+            <h5>Copyright 2019. All rights reserved.</h5>
+            <h6>Design and Developed by <a href="">ITI Team</a></h6>
+        </div>
+    </footer>
+   
+    <!--
+        Essential Scripts
+        =====================================-->
+    <!-- Main jQuery -->
+    <script src="~/Areas/UserArea/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Google Map -->
+    <!-- Google Map -->
+    <script src="~/Areas/UserArea/https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script src="~/Areas/UserArea/plugins/google-map/gmap.js"></script>
+    <!-- Bootstrap 3.7 -->
+    <script src="~/Areas/UserArea/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="~/Areas/UserArea/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="~/Areas/UserArea/plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="~/Areas/UserArea/plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="~/Areas/UserArea/plugins/mixitup/dist/mixitup.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="~/Areas/UserArea/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="~/Areas/UserArea/js/script.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
+

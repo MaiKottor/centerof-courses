@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.xx = ViewBag.li;
+}
+
+
+
+<section class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@* About us *@
+
+
+<section class="service-2 section" id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>مركز الدرسات الوطنية و الابداع</h2>
+                <p class="pargraph">مركز الدراسات الوطنية هو مركز حكومي خدمي تدريبي تنموي يتبع ديوان عام محافظة المنوفية تم إنشاؤه عام 1994م.</p>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <div class="col-md-6"> <img src="~/areas/userarea/images/24774682_1415844795179930_5561736736393930235_n.jpg" class="img-responsive img-40" alt=""> </div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="list-group">تدريب القيادات وتنمية معارفهم وزيادة خبراتهم وصقل مهاراتهم .</li>
+                    <li class="list-group">التربية الفكرية للنشئ والشباب وتنمية مهاراتهم الفكرية والابداعية</li>
+                    <li class="list-group">المركز معتمد كمركز تدريبى على المستوى الاقليمى من وزارتى التنمية المحلية والتخطيط والاصلاح الادارى</li>
+                    <li class="list-group">تدريب وتنفيذ كافة البرامج التنفيذية والتثقيفية للعاملين بالجهاز الادارى بهدف تطوير الفكر الادارى ونشر الوعى التدريبى لدى العاملين.</li>
+                    <li class="list-group">المركز معتمد كمركز تدريبى على المستوى القومى فى التدريب الادارى واللغات وعلوم الحاسب الالى من الجهاز المركزى للتنظيم والادارة ويمنح المتدرب شهادة معتمدة</li>
+                </ul>
+                @Html.ActionLink("اعرض المزيد", "Index", "AboutUsPage", new { area = "UserArea" }, new { @class = "btn btn-success mt-20" })
+
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+</section>
+<!-- End section -->
+<div id="showservice"></div>
+
+<div id="news"></div>
+<div id="showclients"></div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#showservice").load("/UserArea/Home/service")
+            $("#news").load("/UserArea/Home/news")
+            $("#showclients").load("/UserArea/Home/getclients")
+
+        })
+
+    </script>
+}

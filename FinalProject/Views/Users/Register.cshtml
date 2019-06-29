@@ -1,0 +1,72 @@
+﻿@model FinalProject.BLL.ViewModels.UsersVM
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post" action="/Users/Register">
+    <div class="row form-group">
+        @Html.LabelFor(x => x.user_name, "الاسم", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.user_name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x=>x.user_name)
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.qualification_id, "المؤهل", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.DropDownListFor(x => x.qualification_id, ViewBag.QualificationList as SelectList, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.age, "العمر", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.age, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x=>x.age)
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.address, "العنوان", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.address, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.email, "البريد الالكترونى", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x=>x.email)
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.phone, "التليفون", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.phone, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.loginUserName, "اسم الدخول للنظام", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.TextBoxFor(x => x.loginUserName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.loginUserName)
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.password, "كلمة المرور", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.PasswordFor(x => x.password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.password)
+        </div>
+    </div>
+    <div class="row form-group">
+        @Html.LabelFor(x => x.conpassword, " تاكيد كلمة المرور", new { @class = "col-md-2 col-form-label" })
+        <div class="col-sm-8">
+            @Html.PasswordFor(x => x.conpassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.conpassword)
+        </div>
+    </div>
+    <div class="row form-group">
+        <input type="submit" value=" تسجيل" class="btn btn-primary" />
+    </div>
+</form>

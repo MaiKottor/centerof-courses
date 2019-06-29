@@ -1,0 +1,85 @@
+﻿@model FinalProject.BLL.ViewModels.LoginVM
+
+@{
+    ViewBag.Title = "LoginUser";
+}
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>تسجيل دخول</h2>
+                <ol class="breadcrumb header-bradcrumb">
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "index", "Home")</li>
+                    <li class="active">تسجيل دخول</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>تسجيل دخول</h2>
+                <div class="border"></div>
+
+                <p class="smpargraph mb-3">
+                    ليس لديك حساب ؟
+                    @Html.ActionLink("قم بالتسجيل", "Register", "Home", new { @class = "btn btn-success" })
+                </p>
+            </div>
+
+            <form method="post">
+
+                <div class="row form-group">
+                    @Html.Label("اسم المستخدم", new { @class = "col-md-2 col-form-label" })
+                    <div class="col-sm-8 col-4">
+                        @Html.TextBoxFor(model => model.user_name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.user_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    @Html.Label("الرقم السري", new { @class = "col-md-2 col-form-label" })
+                    <div class="col-sm-8 col-4">
+                        @Html.PasswordFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-8 col-lg-2">
+                        <input type="submit" value="تسجيل دخول"  class="btn btn-success form-control" />
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+</section>
+@section scripts{
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

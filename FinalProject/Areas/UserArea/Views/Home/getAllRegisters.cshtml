@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "getAllRegisters";
+    Layout = "~/Areas/UserArea/Views/Shared/_layoutUser.cshtml";
+}
+
+<h2>getAllRegisters</h2>
+@{
+    Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+@using FinalProject.BLL.ViewModels
+@model List<UsersVM>
+
+<div class="container">
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary " />
+        <div id="edit">
+
+
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <td>رقم الخبر</td>
+                <th>عنوان الخبر</th>
+                <th>التاريخ</th>
+                <th>تفاصيل الخبر</th>
+                <th>نوع الخبر</th>
+                <th>صورة الخبر</th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.user_id</td>
+                <td>@item.user_name</td>
+                <td>@item.age</td>
+                <td>@item.email</td>
+                <td>@item.national_id</td>
+                <td>@item.qualification_name</td>
+
+                <td>@Html.ActionLink("حذف", "DeleteNews", "news", new { id = item.user_id }, new { @class = "btn btn-danger" })</td>
+                <td><input type="button" value="تعديل" onclick="cl(@item.user_id)" class="btn btn-primary" id="edit" /></td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit").load("/AdminArea/news/AddNews")
+                    })
+            })
+            function cl(id) {
+                alert(id);
+
+                $("#edit").load("/AdminArea/news/EditNews/" + id)
+            }
+        </script>
+    }
+</div>
+

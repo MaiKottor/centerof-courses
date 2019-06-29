@@ -1,0 +1,103 @@
+﻿
+@*@model FinalProject.BLL.ViewModels.CourseVM
+
+    @Html.Partial("CoursesFormView", Model)*@
+
+@model FinalProject.BLL.ViewModels.CourseVM
+
+
+<form method="post" action="/Course/EditCourse">
+    @Html.HiddenFor(a => a.course_id)
+    <div class="form-group row">
+        @Html.LabelFor(a => a.course_name, "اسم الكورس", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.course_name,  new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.course_name)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.instructor_id, "المدرب", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(a => a.instructor_id, ViewBag.instructorsList as SelectList, new { @class = "col-sm-2 col-form-label" })
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.isActive, "حالة الخدمة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            <label>فعال</label>
+            @if (ViewBag.activeState)
+            {
+                <input type="checkbox" name="activeState" value="True" checked/>
+            }
+            else
+            {
+                <input type="checkbox" name="activeState" value="True"/>
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.category_id, "القسم", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(a => a.category_id, ViewBag.categsList as SelectList, new { @class = "col-sm-2 col-form-label" })
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.service_id, "نوع الخدمة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(a => a.service_id, ViewBag.servicesList as SelectList, new { @class = "col-sm-2 col-form-label" })
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.description, "الوصف", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.description, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.description)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.hours_number, "عدد الساعات", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.hours_number, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.hours_number)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.appointments, "المواعيد", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.appointments, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.appointments)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.price, "السعر", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.price, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.price)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.starting_date, "تاريخ البدء", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.starting_date, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.price)
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">حفظ</button>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,24 @@
+﻿@model List<FinalProject.BLL.ViewModels.parenterVM>
+
+<section class="service-2 section">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>شركاؤنا</h2>
+                <div class="border"></div>
+
+
+            </div>
+            <div class="col-3 m-1">
+
+                @foreach (var item in Model)
+                {
+                    <img src="~/Images/@item.image" style="width:200px;height:200px;" class="img-fluid" />
+                }
+            </div>
+
+        </div>
+        </div>
+        </section>

@@ -1,0 +1,93 @@
+﻿@model List<FinalProject.BLL.ViewModels.newsVM>
+@{
+    ViewBag.Title = "GetAllNews";
+    ViewBag.xx = ViewBag.li;
+
+}
+
+
+
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>اخبار</h2>
+                <ol class="breadcrumb header-bradcrumb">
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "index", "Home")</li>
+                    <li class="active">اخبار</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center ">
+                <h2> اخبار المركز</h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+            <!-- single blog post -->
+            @foreach (var item in Model)
+            {
+                <article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+                    <div class="post-item">
+                        <div class="media-wrapper"> <img src="~/Images/@item.image" alt="amazing caves coverimage" class="img-responsive"> </div>
+                        <div class="content">
+                            <h3>@item.Title</h3>
+                            <p>@item.description</p>
+                            <p class="card-text"><small class="text-muted">@item.date</small></p>
+
+                        </div>
+                    </div>
+                </article>
+            }
+
+
+
+
+            <!-- end single blog post -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+
+  
+
+
+
+@*<div class="card-group">
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>*@

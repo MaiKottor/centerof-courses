@@ -1,0 +1,40 @@
+﻿@model List<FinalProject.BLL.ViewModels.newsVM>
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center ">
+                <h2> اخبار المركز</h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+            <!-- single blog post -->
+            @foreach (var item in Model)
+            {
+                <article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+                    <div class="post-item">
+                        <div class="media-wrapper"> <img src="~/Images/@item.image" alt="amazing caves coverimage" class="img-responsive"> </div>
+                        <div class="content" style="max-height:200px;overflow:auto">
+                            <h3 class="head">@item.Title</h3>
+                            <p>@item.description</p>
+                        </div>
+                    </div>
+                </article>
+            }
+
+          
+            <div class="row">
+                <div class="col-md-6 text-center">
+                   @Html.ActionLink("اعرض المزيد", "GetAllNews", "UserNews",new {area="UserArea" },new {@class="btn btn-success" })
+
+                </div>
+            </div>
+
+            <!-- end single blog post -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>

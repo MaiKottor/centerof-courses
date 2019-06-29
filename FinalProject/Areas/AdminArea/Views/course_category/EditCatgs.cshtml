@@ -1,0 +1,22 @@
+﻿@model FinalProject.BLL.ViewModels.CategoryVM
+
+
+<form method="post" action="/course_category/EditCatgs">
+    @Html.HiddenFor(a => a.category_id)
+    <div class="form-group row">
+        @Html.LabelFor(a => a.category_name, " اسم القسم", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-9">
+            @Html.EditorFor(a => a.category_name, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.category_name)
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">حفظ</button>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+

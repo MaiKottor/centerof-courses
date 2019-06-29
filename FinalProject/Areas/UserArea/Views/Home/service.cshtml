@@ -1,0 +1,60 @@
+﻿@model List<FinalProject.BLL.ViewModels.servicesVM>
+
+
+<section class="call-to-action section">
+
+    <div class="container-fluid" id="serviceback">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>خدماتنا</h2>
+                <div class="border"></div>
+                @*<div>
+                        <img src="~/Areas/UserArea/images/reading.png" class="m-2" />
+                        <img src="~/Areas/UserArea/images/technical-support.png" />
+                    </div>*@
+            </div>
+
+            @foreach (var item in Model)
+            {<div class="col-md-4 col-sm-6 col-xs-12  no-padding">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                        </div>
+                        <h3> @item.service_name</h3>
+                    </div>
+                </div>
+
+
+            }
+            <!-- /section title -->
+        </div>
+    </div>
+    </section>
+    <!-- End row -->
+    <!-- End container -->
+    @*<div class="row text-center">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item" style="max-width:300px;max-height:300px">
+                    <h4>مكتبة</h4>
+                    <img src="~/Areas/UserArea/images/portfolio/portfolio-3.jpg"/>
+                </div>
+            </div>
+            <!-- END COL -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <i class="tf-ion-ios-briefcase-outline"></i>
+                    <h4>صيانة اجهزة الحاسب الالي</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
+                </div>
+            </div>
+            <!-- END COL -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <i class="tf-ion-ios-email-outline"></i>
+                    <h4>قاعات</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
+                </div>
+            </div>
+
+        </div>*@

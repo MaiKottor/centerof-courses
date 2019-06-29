@@ -1,0 +1,57 @@
+﻿@model FinalProject.BLL.ViewModels.labVM
+
+<form method="post" action="/lab/editlab">
+    @Html.HiddenFor(a=>a.lab_id)
+    <div class="form-group row">
+        @Html.LabelFor(a => a.lab_name, "اسم القاعة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.lab_name, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.lab_name)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.lab_number, "رقم القاعة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.lab_number, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.lab_number)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.description, "وصف القاعة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.description, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.description)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.floor_number, "رقم دور القاعة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(a => a.floor_number, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.floor_number)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.floor_number, "الخدمة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.DropDownListFor(a => a.service_id, ViewBag.li as SelectList, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.floor_number)
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">تعديل</button>
+    </div>
+
+</form>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,89 @@
+﻿@using FinalProject.BLL.ViewModels
+@model List<CourseVM>
+@{
+    ViewBag.Title = "Courses";
+}
+
+<div class="container">
+
+    @*@Ajax.ActionLink("new course", "AddCourse", "Course"
+        , new AjaxOptions
+        {
+            InsertionMode = InsertionMode.InsertAfter
+            ,
+            UpdateTargetId = "edit"
+        })*@
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary "/>
+        <div id="edit_div">
+
+
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <th>اسم الدورة</th>
+                <th>القسم</th>
+                <th>اسم المدرب</th>
+                <th>نوع الخدمة</th>
+                <th>الوصف</th>
+                <th>المواعيد</th>
+                <th>عدد الساعات</th>
+                <th>السعر</th>
+                <th>تاريخ البدء</th>
+                <th>حالة الكورس</th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.course_name</td>
+                    <td>@item.courses_category.category_name</td>
+                    <td>@item.instructor.instructor_name</td>
+                    <td>@item.service.service_name</td>
+                    <td>@item.description</td>
+                    <td>@item.appointments</td>
+                    <td>@item.hours_number</td>
+                    <td>@item.price</td>
+                    <td>@item.starting_date</td>
+                    @{
+                        if (item.isActive == true)
+                        {
+                            <td>فعال</td>
+                        }
+                        else
+                        {
+                            <td>غير فعال</td>
+                        }
+                    }
+                    <td>@Html.ActionLink("حذف", "DeleteCourse", "Course", new { id = item.course_id }, new { @class="btn btn-danger"})</td>
+                    <td><input type="button" value="تعديل" onclick="cl(@item.course_id)" class="btn btn-primary" id="edit"/></td>
+                  
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit_div").load("/AdminArea/Course/AddCourse")
+                    })
+            })
+            function cl(id) {
+                
+                $("#edit_div").load("/AdminArea/Course/EditCourse/" + id)
+            }
+        </script>    
+    }
+</div>

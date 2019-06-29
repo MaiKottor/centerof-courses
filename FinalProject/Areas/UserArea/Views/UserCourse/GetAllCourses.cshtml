@@ -1,0 +1,56 @@
+﻿@model List<FinalProject.BLL.ViewModels.CourseVM>
+
+<style>
+    .content {
+        border: 1px solid #eee;
+        margin-bottom: 30px;
+        padding: 50px 50px;
+        transition: all 0.3s ease 0s;
+    }
+
+        .content:hover {
+            box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+        }
+
+    .card-title {
+        font-size: 25pt;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-body {
+    }
+</style>
+
+
+
+
+@foreach (var item in Model)
+{
+    <article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+        <div class="post-item">
+            <div class="content">
+                <h3>@item.course_name</h3>
+                <h6 class="card-subtitle mb-2 text-muted">@item.price $</h6>
+                <h6 class="card-subtitle mb-2 text-muted">عدد الساعات : @item.hours_number</h6>
+                <p class="card-text">@item.description</p>
+                <p class="card-text"><small class="text-muted">تاريخ البدء : @item.starting_date</small></p>
+
+
+                <div class="card-footer">
+                    @if (item.isActive == true)
+                    {
+                        @Html.ActionLink("تسجيل فى الدورة", "RegisterThisCourse", "UserCourse", new { id = item.course_id, area = "UserArea" }, new { @class = "btn btn-primary" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("هذه الدورة غير متاحه الان", "GetCategsCourses", "UserCourse", new { area = "UserArea" }, new { @class = "btn btn-primary" })
+                    }
+                </div>
+
+            </div>
+           
+        </div>
+    </article>
+}

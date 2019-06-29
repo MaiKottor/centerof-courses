@@ -1,0 +1,39 @@
+﻿@model FinalProject.BLL.ViewModels.CourseVM
+@{
+    ViewBag.Title = "حضور / غياب";
+}
+
+<div class="container">
+    
+    <div class="form-group row">
+        @Html.Label("الدورات الحالية", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownList("الدورات الحالية", ViewBag.activeCoursesList as SelectList, new { @class = "col-sm-2 col-form-label", @id="courses_dll" })
+        </div>
+    </div>
+
+    @*<div class="container">
+        <input type="button" value="تحضير بيانات الحضور بتاريخ اليوم" class="btn btn-primary" />
+    </div>*@
+
+    <div class="container placeholder" id="gg">
+
+    </div>
+
+</div>
+
+@section scripts{
+    
+<script>
+   
+        $("#gg").load("/AdminArea/Attendence/GetCourseStudents/" + $("#courses_dll").val());
+        
+        $("#courses_dll").on("change", function () {
+            let courseId = $(this).val();
+            $("#gg").load("/AdminArea/Attendence/GetCourseStudents/" + courseId);
+        })
+    
+</script>    
+    
+    
+}

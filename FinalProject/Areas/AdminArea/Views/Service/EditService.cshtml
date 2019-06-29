@@ -1,0 +1,22 @@
+﻿@model FinalProject.BLL.ViewModels.servicesVM
+
+<form method="post" action="/Service/EditService">
+    @Html.HiddenFor(a => a.service_id)
+    <div class="form-group row">
+        @Html.LabelFor(a => a.service_name, "  نوع الخدمة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.EditorFor(a => a.service_name, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.service_name)
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">حفظ</button>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+

@@ -1,0 +1,113 @@
+﻿@model  FinalProject.BLL.ViewModels.instructorVM
+
+@*<form id="myForm">*@
+<form method="post" action="/Instructor/AddInstructor">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(x => x.instructor_id)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>اسم المدرب</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.instructor_name, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.instructor_name, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>الوحدة التابع لها</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.NameOf_ItsUnit, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.NameOf_ItsUnit, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المواضيع</label></div>
+            <div class="col-4">@Html.TextAreaFor(x => x.TrainningTopic, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.TrainningTopic, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المسمى الوظيفى</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.Current_JobTitle, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Current_JobTitle, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>البريد الالكترونى</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.Email, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Email, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>الموبايل</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.Mobile, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Mobile, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>التليفون</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.phone, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.phone, "", new { @class = "error" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المؤهلات</label></div>
+            <div class="col-4">@Html.TextBoxFor(x => x.QualificationsName, new { @class = "form-control" })</div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.QualificationsName, "", new { @class = "error" })
+            </div>
+        </div>
+        <div>
+            @*<input type="button" value="اضافة" id="btnSubmit"  onclick="addfun()" class="btn btn-primary" />*@
+            <button type="submit" class="btn btn-primary">اضافه</button>
+        </div>
+    </div>
+</form>
+<div id="divLoader" style="display:none">
+    <img src="~/Images/loader2.gif" width="100px" height="100px" />
+</div>
+ 
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    // $(document).ready(function () {
+    function addfun() {
+        debugger;
+      //  $("#btnSubmit").on("click", function () {
+            debugger;
+            $("#divLoader").show();
+            var data = $("#myForm").serialize();
+            if ($("Form").valid()) {
+                $.ajax({
+                    type: "POST",
+                    data: data,
+                    url: "/AdminArea/Instructor/AddInstructor",
+                    success: function (response) {
+                        $("#divLoader").hide();
+                        alert("data inserted");
+                        $("#myForm").hide();
+                        $("#DivGetAllInstructors").load("/AdminArea/Instructor/GetAllInstructors")
+
+                    }
+
+                })
+            } else {
+                //  alert("error");
+            }
+
+      //  })
+
+    }
+  // })
+
+
+</script>

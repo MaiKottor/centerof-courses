@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "getAllCatgs";
+    Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+
+<h2>getAllCatgs</h2>
+@using FinalProject.BLL.ViewModels
+@model List<CategoryVM>
+@{
+    ViewBag.Title = "getAllNews";
+}
+
+<div class="container">
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary " />
+        <div id="edit">
+
+
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                
+                <th>اسم القسم </th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    
+                    <td>@item.category_name</td>
+                    <td>@Html.ActionLink("حذف", "DeleteCatgs", "course_category", new { id = item.category_id }, new { @class = "btn btn-danger" })</td>
+                    <td><input type="button" value="تعديل" onclick="cl(@item.category_id)" class="btn btn-primary" id="edit" /></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit").load("/AdminArea/course_category/AddCategory")
+                    })
+            })
+            function cl(id) {
+
+                $("#edit").load("/AdminArea/course_category/EditCatgs/" + id)
+            }
+        </script>
+    }
+</div>

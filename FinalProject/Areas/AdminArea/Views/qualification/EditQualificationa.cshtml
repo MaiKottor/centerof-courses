@@ -1,0 +1,40 @@
+﻿@model FinalProject.BLL.ViewModels.qualificationVM
+<form method="post" action="/qualification/EditQualificationa">
+    @Html.HiddenFor(a => a.qualification_id)
+    <div class="form-group row">
+        @Html.LabelFor(a => a.qualification_name, "  اسم المؤهل", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.EditorFor(a => a.qualification_name, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.qualification_name)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.qualification_date, "  تاريخ الم}هل", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.EditorFor(a => a.qualification_date, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.qualification_date)
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(a => a.organization, "  اسم المنظمة", new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.EditorFor(a => a.organization, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-2">
+            @Html.ValidationMessageFor(a => a.organization)
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">حفظ</button>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+

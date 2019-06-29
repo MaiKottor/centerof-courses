@@ -1,0 +1,339 @@
+E:\iti completed projects\New folder\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\csc.exe
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\vbc.exe
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\VBCSCompiler.exe
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.dll.config
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.pdb
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\EntityFramework.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\EntityFramework.SqlServer.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.BLL.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\Microsoft.Web.Infrastructure.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Helpers.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Mvc.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Razor.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.Deployment.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.Razor.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.DAL.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.BLL.pdb
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\EntityFramework.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\EntityFramework.SqlServer.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Razor.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.Deployment.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Webpages.Razor.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Helpers.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\System.Web.Mvc.xml
+E:\iti completed projects\New folder\FinalProject\FinalProject\bin\FinalProject.DAL.pdb
+E:\iti completed projects\New folder\FinalProject\FinalProject\obj\Debug\FinalProject.dll
+E:\iti completed projects\New folder\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\project\final_project\FinalProject\bin\roslyn\csc.exe
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\project\final_project\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\project\final_project\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+D:\project\final_project\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\project\final_project\FinalProject\bin\roslyn\vbc.exe
+D:\project\final_project\FinalProject\bin\roslyn\VBCSCompiler.exe
+D:\project\final_project\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+D:\project\final_project\FinalProject\bin\FinalProject.dll.config
+D:\project\final_project\FinalProject\bin\FinalProject.dll
+D:\project\final_project\FinalProject\bin\FinalProject.pdb
+D:\project\final_project\FinalProject\bin\EntityFramework.dll
+D:\project\final_project\FinalProject\bin\EntityFramework.SqlServer.dll
+D:\project\final_project\FinalProject\bin\FinalProject.BLL.dll
+D:\project\final_project\FinalProject\bin\FinalProject.DAL.dll
+D:\project\final_project\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\project\final_project\FinalProject\bin\Microsoft.Web.Infrastructure.dll
+D:\project\final_project\FinalProject\bin\System.Web.Helpers.dll
+D:\project\final_project\FinalProject\bin\System.Web.Mvc.dll
+D:\project\final_project\FinalProject\bin\System.Web.Razor.dll
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.Deployment.dll
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.dll
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.Razor.dll
+D:\project\final_project\FinalProject\bin\FinalProject.BLL.pdb
+D:\project\final_project\FinalProject\bin\FinalProject.DAL.pdb
+D:\project\final_project\FinalProject\bin\EntityFramework.xml
+D:\project\final_project\FinalProject\bin\EntityFramework.SqlServer.xml
+D:\project\final_project\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\project\final_project\FinalProject\bin\System.Web.Razor.xml
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.xml
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.Deployment.xml
+D:\project\final_project\FinalProject\bin\System.Web.Webpages.Razor.xml
+D:\project\final_project\FinalProject\bin\System.Web.Helpers.xml
+D:\project\final_project\FinalProject\bin\System.Web.Mvc.xml
+D:\project\final_project\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+D:\project\final_project\FinalProject\obj\Debug\FinalProject.dll
+D:\project\final_project\FinalProject\obj\Debug\FinalProject.pdb
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\csc.exe
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\vbc.exe
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\VBCSCompiler.exe
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.dll.config
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.pdb
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\EntityFramework.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\EntityFramework.SqlServer.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.BLL.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.DAL.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\Microsoft.Web.Infrastructure.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Helpers.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Mvc.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Razor.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.Deployment.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.Razor.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.BLL.pdb
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.BLL.dll.config
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.DAL.pdb
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\EntityFramework.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\EntityFramework.SqlServer.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Razor.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.Deployment.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Webpages.Razor.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Helpers.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\bin\System.Web.Mvc.xml
+F:\ITI\Final-Project\final project\final_project\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+F:\ITI\Final-Project\final project\final_project\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\final project\final_project\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+F:\ITI\Final-Project\final project\final_project\FinalProject\obj\Debug\FinalProject.dll
+F:\ITI\Final-Project\final project\final_project\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\User35\Desktop\dd\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\User35\Desktop\dd\FinalProject\obj\Debug\FinalProject.dll
+C:\Users\User35\Desktop\dd\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\csc.exe
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\vbc.exe
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\User35\Desktop\dd\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.dll.config
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.pdb
+C:\Users\User35\Desktop\dd\FinalProject\bin\EntityFramework.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\EntityFramework.SqlServer.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.BLL.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.DAL.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Helpers.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Mvc.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Razor.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.Deployment.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.Razor.dll
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.BLL.pdb
+C:\Users\User35\Desktop\dd\FinalProject\bin\FinalProject.DAL.pdb
+C:\Users\User35\Desktop\dd\FinalProject\bin\EntityFramework.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\EntityFramework.SqlServer.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Razor.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.Deployment.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Webpages.Razor.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Helpers.xml
+C:\Users\User35\Desktop\dd\FinalProject\bin\System.Web.Mvc.xml
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\csc.exe
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\vbc.exe
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\VBCSCompiler.exe
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.dll.config
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.pdb
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.BLL.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.DAL.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.BLL.pdb
+F:\bbbbb\20-6-2019\dd\FinalProject\bin\FinalProject.DAL.pdb
+F:\bbbbb\20-6-2019\dd\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+F:\bbbbb\20-6-2019\dd\FinalProject\obj\Debug\FinalProject.dll
+F:\bbbbb\20-6-2019\dd\FinalProject\obj\Debug\FinalProject.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\csc.exe
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\vbc.exe
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\VBCSCompiler.exe
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.dll.config
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.BLL.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.DAL.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.BLL.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.BLL.dll.config
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.DAL.pdb
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\bin\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\obj\Debug\FinalProject.dll
+F:\ITI\Final-Project\20-6-2019\New folder\dd\FinalProject\obj\Debug\FinalProject.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\csc.exe
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\vbc.exe
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\VBCSCompiler.exe
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.dll.config
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.BLL.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.DAL.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\System.Linq.Dynamic.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.BLL.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.BLL.dll.config
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.DAL.pdb
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\bin\FinalProject.DAL.dll.config
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\obj\Debug\FinalProject.dll
+D:\MyITICource\FinalProject\24-6-2019\dd\dd\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\csc.exe
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\vbc.exe
+C:\Users\ali\Desktop\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.dll.config
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.pdb
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.BLL.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.DAL.dll
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.BLL.pdb
+C:\Users\ali\Desktop\New folder\FinalProject\bin\FinalProject.DAL.pdb
+C:\Users\ali\Desktop\New folder\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\New folder\FinalProject\obj\Debug\FinalProject.dll
+C:\Users\ali\Desktop\New folder\FinalProject\obj\Debug\FinalProject.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\csc.exe
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\vbc.exe
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.dll.config
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.BLL.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.BLL.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.BLL.dll.config
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\New folder\FinalProject\bin\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\last\New folder\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+F:\ITI\Final-Project\last\New folder\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\last\New folder\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+F:\ITI\Final-Project\last\New folder\FinalProject\obj\Debug\FinalProject.dll
+F:\ITI\Final-Project\last\New folder\FinalProject\obj\Debug\FinalProject.pdb
+H:\project\New folder\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+H:\project\New folder\FinalProject\obj\Debug\FinalProject.dll
+H:\project\New folder\FinalProject\obj\Debug\FinalProject.pdb
+H:\project\New folder\FinalProject\bin\roslyn\csc.exe
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\project\New folder\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\project\New folder\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+H:\project\New folder\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+H:\project\New folder\FinalProject\bin\roslyn\vbc.exe
+H:\project\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe
+H:\project\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+H:\project\New folder\FinalProject\bin\FinalProject.dll.config
+H:\project\New folder\FinalProject\bin\FinalProject.dll
+H:\project\New folder\FinalProject\bin\FinalProject.pdb
+H:\project\New folder\FinalProject\bin\FinalProject.BLL.dll
+H:\project\New folder\FinalProject\bin\FinalProject.DAL.dll
+H:\project\New folder\FinalProject\bin\FinalProject.BLL.pdb
+H:\project\New folder\FinalProject\bin\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\csc.exe
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\System.Collections.Immutable.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\System.Reflection.Metadata.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\vbc.exe
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\roslyn\VBCSCompiler.exe.config
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.dll.config
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.BLL.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.DAL.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.BLL.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.BLL.dll.config
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.DAL.pdb
+F:\ITI\Final-Project\last\project\New folder\FinalProject\bin\FinalProject.DAL.dll.config
+F:\ITI\Final-Project\last\project\New folder\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+F:\ITI\Final-Project\last\project\New folder\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+F:\ITI\Final-Project\last\project\New folder\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+F:\ITI\Final-Project\last\project\New folder\FinalProject\obj\Debug\FinalProject.dll
+F:\ITI\Final-Project\last\project\New folder\FinalProject\obj\Debug\FinalProject.pdb

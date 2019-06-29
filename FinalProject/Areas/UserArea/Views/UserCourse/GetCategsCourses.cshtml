@@ -1,0 +1,78 @@
+﻿@model FinalProject.BLL.ViewModels.CoursesCategsVM
+@{
+    ViewBag.Title = "الدورات التدريبية";
+}
+
+
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>الدورات التدريبية</h2>
+                <ol class="breadcrumb header-bradcrumb">
+                    <li>@Html.ActionLink("الصفحة الرئيسية", "index", "Home")</li>
+                    <li class="active">الدورات التدريبية</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+  
+        <div class="row">
+            <div class="col-4">
+                <div class="sidebar">
+                    <nav class="sidebar-nav">
+                        <ul>
+                            <li class="nav-title">الدورات التدريبية</li>
+
+                            @foreach (var item in Model.categs)
+                            {
+                            <li class="nav-item">
+
+
+                                <a href="#" class="nav-link" onclick="cl(@item.category_id)">@item.category_name</a>
+                            </li>
+                                    }
+
+                             
+
+
+
+
+                            </ul>
+                    </nav>
+
+                </div>
+                </div>
+
+           
+            <div class="col-8">
+                <div id="content">
+
+                </div>
+            </div>
+            </div>
+     
+
+ 
+</section>
+
+
+
+
+@section scripts{
+
+    <script>
+
+        $(document).ready(function () {
+            $("#content").load("/UserArea/UserCourse/GetAllCourses");
+
+        })
+        function cl(id) {
+            $("#content").load("/UserArea/UserCourse/GetCoursesByCategoryId/" + id)
+        }
+    </script>
+
+}

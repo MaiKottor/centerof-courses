@@ -1,0 +1,132 @@
+﻿
+
+@model List<FinalProject.BLL.ViewModels.AttendenceVM>
+<div id="gg"></div>
+<form>
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <th>اسم الطالب</th>
+                <th>اسم الدورة</th>
+                <th>التاريخ</th>
+                <th>حضور</th>
+                <th>انصراف</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.UserName</td>
+                    <td>@item.courseName</td>
+                    <td>@DateTime.Now</td>
+                    <td>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                @if (item.attendant == true)
+                                {
+                                    <input type="checkbox" name="attendant" value="true" id="attid" checked onclick="attFun(@item.user_id,@item.course_id)" value="True" />
+                                }
+                                else
+                                {    <input type="checkbox" name="attendant" value="true" id="attid" onclick="attFun(@item.user_id,@item.course_id)" value="True" /> }
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                @if (item.departure == true)
+                                {
+                                    <input type="checkbox" name="departure" value="true" id="departureid" checked onclick="departureFun(@item.user_id,@item.course_id)" value="True" />
+                                }
+                                else
+                                {
+                                    <input type="checkbox" name="departure" value="true" id="departureid"  onclick="departureFun(@item.user_id,@item.course_id)" value="True" />
+                                }
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @*<input type="submit" value="تسجيل" />*@
+</form>
+
+<script>
+    //alert("kkkkkkkkkk");
+
+    //$("#attid").on("change", function () {
+
+    //    alert("sssssss");
+    //    var x = $("#attid").attr('cheked');
+    //    alert(x);
+    //});
+
+
+
+    function attFun(studentid, courseId) {
+        debugger;
+        var data = courseId;
+
+        $.ajax({
+            type: "POST",
+            data: courseId,
+            url: "/AdminArea/Attendence/registerAtt/" + data + "?studentid=" + studentid,
+            success: function (response) {
+                var checkBox = document.getElementById("attid");
+              
+                if (checkBox.checked == true)
+                {
+                    alert("تم تسجيل الحضور");
+                } 
+                //else {
+                //    alert("تم الغاء تسجيل الحضور");
+                //}
+
+            }
+
+        })
+
+        //  $("#gg").load("/AdminArea/Attendence/registerAtt/" + courseId + "?studentid=" + studentid);
+    }
+
+    function departureFun(studentid, courseId) {
+        debugger;
+        var data = courseId;
+
+        $.ajax({
+            type: "POST",
+            data: courseId,
+            url: "/AdminArea/Attendence/registerdeparture/" + data + "?studentid=" + studentid,
+            success: function (response) {
+                
+                var checkBox = document.getElementById("departureid");
+              
+                if (checkBox.checked == true) {
+                    alert("تم تسجيل الانصراف");
+                } 
+                //else {
+                //    alert("تم ا لغاء تسجيل الانصراف");
+                //}
+
+            }
+
+        })
+
+        //    $("#gg").load("/AdminArea/Attendence/registerdeparture/" + courseId + "?studentid=" + studentid);
+        // $("#gg").load("/AdminArea/Attendence/registerAtt/" + courseId );
+    }
+    //disable
+    //$('input[type=checkbox]').change(function () {
+    //    if ($(this).is(':checked')) {
+    //        $('input[type=checkbox]').attr('disabled', true);
+    //        $(this).attr('disabled', '');
+    //    }
+    //    else {
+    //        $('input[type=checkbox]').attr('disabled', '');
+    //    }
+    //});
+</script>

@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8BA0A194-677A-45F6-865F-0D990A023BFC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\..\..\..\20-6-2019\dd\FinalProject\bin\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\UserArea\css\bootstrap.min.css" />
+    <Content Include="Areas\UserArea\css\colors\blue.css" />
+    <Content Include="Areas\UserArea\css\colors\green.css" />
+    <Content Include="Areas\UserArea\css\colors\light-blue.css" />
+    <Content Include="Areas\UserArea\css\colors\light-green.css" />
+    <Content Include="Areas\UserArea\css\colors\red.css" />
+    <Content Include="Areas\UserArea\css\colors\yellow.css" />
+    <Content Include="Areas\UserArea\css\main.css" />
+    <Content Include="Areas\UserArea\css\style.css" />
+    <Content Include="Areas\UserArea\css\style2.css" />
+    <Content Include="Areas\UserArea\images\24774682_1415844795179930_5561736736393930235_n.jpg" />
+    <Content Include="Areas\UserArea\images\about-us.jpg" />
+    <Content Include="Areas\UserArea\images\about\about-2.jpg" />
+    <Content Include="Areas\UserArea\images\about\about-2.png" />
+    <Content Include="Areas\UserArea\images\about\about-header.jpg" />
+    <Content Include="Areas\UserArea\images\about\member.jpg" />
+    <Content Include="Areas\UserArea\images\banner-3544296_960_720.jpg" />
+    <Content Include="Areas\UserArea\images\blog\avatar.png" />
+    <Content Include="Areas\UserArea\images\blog\post-1.jpg" />
+    <Content Include="Areas\UserArea\images\blog\post-2.jpg" />
+    <Content Include="Areas\UserArea\images\blog\post-3.jpg" />
+    <Content Include="Areas\UserArea\images\blog\user.jpg" />
+    <Content Include="Areas\UserArea\images\call-to-action\call-to-action-bg-2.jpg" />
+    <Content Include="Areas\UserArea\images\call-to-action\call-to-action-bg.jpg" />
+    <Content Include="Areas\UserArea\images\client-logo\clients-1.jpg" />
+    <Content Include="Areas\UserArea\images\client-logo\logo-2.png" />
+    <Content Include="Areas\UserArea\images\client-logo\logo-3.png" />
+    <Content Include="Areas\UserArea\images\client-logo\logo-4.png" />
+    <Content Include="Areas\UserArea\images\client-logo\logo-5.png" />
+    <Content Include="Areas\UserArea\images\client-logo\logo1.png" />
+    <Content Include="Areas\UserArea\images\company\company-image-2.jpg" />
+    <Content Include="Areas\UserArea\images\company\company-image-3.jpg" />
+    <Content Include="Areas\UserArea\images\company\company-image.jpg" />
+    <Content Include="Areas\UserArea\images\company\gallery-1.jpg" />
+    <Content Include="Areas\UserArea\images\company\gallery-2.jpg" />
+    <Content Include="Areas\UserArea\images\company\gallery-3.jpg" />
+    <Content Include="Areas\UserArea\images\company\gallery-4.jpg" />
+    <Content Include="Areas\UserArea\images\company\gallery-5.jpg" />
+    <Content Include="Areas\UserArea\images\favicon.png" />
+    <Content Include="Areas\UserArea\images\logo-white.png" />
+    <Content Include="Areas\UserArea\images\logo.jpg" />
+    <Content Include="Areas\UserArea\images\logo.png" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-1.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-2.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-3.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-4.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-5.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-6.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-7.jpg" />
+    <Content Include="Areas\UserArea\images\portfolio\portfolio-8.jpg" />
+    <Content Include="Areas\UserArea\images\pricing-bg.jpg" />
+    <Content Include="Areas\UserArea\images\reading.png" />
+    <Content Include="Areas\UserArea\images\slider\call-to-action-bg.jpg" />
+    <Content Include="Areas\UserArea\images\slider\slider-bg-1.jpg" />
+    <Content Include="Areas\UserArea\images\slider\slider-bg-2.jpg" />
+    <Content Include="Areas\UserArea\images\team\member-1.jpg" />
+    <Content Include="Areas\UserArea\images\team\member-2.jpg" />
+    <Content Include="Areas\UserArea\images\team\member-3.jpg" />
+    <Content Include="Areas\UserArea\images\technical-support.png" />
+    <Content Include="Areas\UserArea\images\technician.png" />
+    <Content Include="Areas\UserArea\images\Untitled.png" />
+    <Content Include="Areas\UserArea\images\WhatsApp Image 2019-06-22 at 2.25.42 PM.jpg" />
+    <Content Include="Areas\UserArea\images\WhatsApp Image 2019-06-23 at 12.04.24 PM.jpeg" />
+    <Content Include="Areas\UserArea\images\WhatsApp Image 2019-06-23 at 12.36.55 PM.jpeg" />
+    <Content Include="Areas\UserArea\images\wooden-board-empty-table-top-blurred-background_1253-1584.jpg" />
+    <Content Include="Areas\UserArea\js\bootstrap.min.js" />
+    <Content Include="Areas\UserArea\js\jquery.min.js" />
+    <Content Include="Areas\UserArea\js\script.js" />
+    <Content Include="Areas\UserArea\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Areas\UserArea\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Areas\UserArea\plugins\google-map\gmap.js" />
+    <Content Include="Areas\UserArea\plugins\google-map\images\marker.png" />
+    <Content Include="Areas\UserArea\plugins\jquery\dist\jquery.js" />
+    <Content Include="Areas\UserArea\plugins\jquery\dist\jquery.min.js" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\css\lightbox.css" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\css\lightbox.min.css" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\images\close.png" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\images\loading.gif" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\images\next.png" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\images\prev.png" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox-plus-jquery.js" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox-plus-jquery.min.js" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox.js" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox.min.js" />
+    <Content Include="Areas\UserArea\plugins\mixitup\dist\mixitup.js" />
+    <Content Include="Areas\UserArea\plugins\mixitup\dist\mixitup.min.js" />
+    <Content Include="Areas\UserArea\plugins\parallax\jquery.parallax-1.1.3.js" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\ajax-loader.gif" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\fonts\slick.svg" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\slick-theme.css" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\slick.css" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\slick.js" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\slick.min.js" />
+    <Content Include="Areas\UserArea\plugins\smooth-scroll\dist\js\smooth-scroll.js" />
+    <Content Include="Areas\UserArea\plugins\smooth-scroll\dist\js\smooth-scroll.min.js" />
+    <Content Include="Areas\UserArea\plugins\themefisher-font\style.css" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\FinalProject.BLL.dll" />
+    <Content Include="bin\FinalProject.BLL.pdb" />
+    <Content Include="bin\FinalProject.DAL.dll" />
+    <Content Include="bin\FinalProject.DAL.pdb" />
+    <Content Include="bin\FinalProject.dll" />
+    <Content Include="bin\FinalProject.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\animsition.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-progressbar-3.3.4.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\course_side_menu.css" />
+    <Content Include="Content\dataTables.bootstrap.min.css" />
+    <Content Include="Content\datatables.min.css" />
+    <Content Include="Content\hamburgers.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\material-design-iconic-font.min.css" />
+    <Content Include="Content\perfect-scrollbar.css" />
+    <Content Include="Content\select2.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\slick.css" />
+    <Content Include="Content\course-style.css" />
+    <Content Include="Content\theme.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\15965578_1813877608880801_536860916864802756_n.jpg" />
+    <Content Include="Images\2017_7_24_14_2_16_12.jpg" />
+    <Content Include="Images\44707071_2081511378846374_4565570533663440896_n.jpg" />
+    <Content Include="Images\loader2.gif" />
+    <Content Include="obj\Debug\FinalProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\FinalProject.dll" />
+    <Content Include="obj\Debug\FinalProject.pdb" />
+    <Content Include="Scripts\animsition.min.js" />
+    <Content Include="Scripts\bootstrap-progressbar.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\circle-progress.min.js" />
+    <Content Include="Scripts\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\datatables.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Areas\AdminArea\Views\web.config" />
+    <Content Include="Areas\AdminArea\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Admin\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\AdminArea\Views\Admin\Empty.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Instructor\AddInstructor.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Instructor\Edit.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Instructor\index.cshtml" />
+    <Content Include="bin\FinalProject.BLL.dll.config" />
+    <Content Include="bin\FinalProject.DAL.dll.config" />
+    <Content Include="bin\FinalProject.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\FinalProject.csproj.CopyComplete" />
+    <Content Include="obj\Debug\FinalProject.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\FinalProject.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\FinalProject.csprojResolveAssemblyReference.cache" />
+    <Content Include="Areas\AdminArea\Views\Shared\CoursesFormView.cshtml" />
+    <Content Include="Areas\AdminArea\Views\lab\getlabs.cshtml" />
+    <Content Include="Areas\AdminArea\Views\lab\Addlab.cshtml" />
+    <Content Include="Areas\AdminArea\Views\lab\editlab.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Course\AddCourse.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Course\EditCourse.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Course\getAllCourses.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Parenter\getparenters.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Parenter\Addparenter.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Parenter\editparenter.cshtml" />
+    <Content Include="Areas\AdminArea\Views\course_category\AddCategory.cshtml" />
+    <Content Include="Areas\AdminArea\Views\course_category\EditCatgs.cshtml" />
+    <Content Include="Areas\AdminArea\Views\course_category\getAllCatgs.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news\AddNews.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news\DeleteNews.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news\EditNews.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news\getAllNews.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news_type\AddNewsType.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news_type\EditNewsTypes.cshtml" />
+    <Content Include="Areas\AdminArea\Views\news_type\getAllNewsTypes.cshtml" />
+    <Content Include="Areas\AdminArea\Views\qualification\AddNewQualification.cshtml" />
+    <Content Include="Areas\AdminArea\Views\qualification\EditQualificationa.cshtml" />
+    <Content Include="Areas\AdminArea\Views\qualification\getAllQualifications.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Service\AddServicee.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Service\EditService.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Service\getAllServices.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Shared\editInstructor.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Shared\GetAllInstructors.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Shared\instructorPartial.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Instructor\delete.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Reports\Edit.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Reports\ShowGrid.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Course\DeleteCourse.cshtml" />
+    <Content Include="Areas\UserArea\css\maps\colors\blue.css.map" />
+    <Content Include="Areas\UserArea\css\maps\colors\green.css.map" />
+    <Content Include="Areas\UserArea\css\maps\colors\light-blue.css.map" />
+    <Content Include="Areas\UserArea\css\maps\colors\light-green.css.map" />
+    <Content Include="Areas\UserArea\css\maps\colors\red.css.map" />
+    <Content Include="Areas\UserArea\css\maps\colors\yellow.css.map" />
+    <Content Include="Areas\UserArea\css\maps\style.css.map" />
+    <Content Include="Areas\UserArea\plugins\jquery\dist\jquery.min.map" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox-plus-jquery.min.map" />
+    <Content Include="Areas\UserArea\plugins\lightbox2\dist\js\lightbox.min.map" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\config.rb" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\fonts\slick.eot" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\fonts\slick.ttf" />
+    <Content Include="Areas\UserArea\plugins\slick-carousel\slick\fonts\slick.woff" />
+    <Content Include="Areas\UserArea\plugins\themefisher-font\fonts\themefisher-font.eot" />
+    <Content Include="Areas\UserArea\plugins\themefisher-font\fonts\themefisher-font.ttf" />
+    <Content Include="Areas\UserArea\plugins\themefisher-font\fonts\themefisher-font.woff" />
+    <Content Include="Areas\UserArea\Views\AboutUsPage\Index.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\getclients.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\Index.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\news.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\service.cshtml" />
+    <Content Include="Areas\UserArea\Views\Shared\_layoutUser.cshtml" />
+    <Content Include="Areas\UserArea\Views\UserCourse\GetCategsCourses.cshtml" />
+    <Content Include="Areas\UserArea\Views\UserCourse\GetCoursesByCategoryId.cshtml" />
+    <Content Include="Areas\UserArea\Views\web.config" />
+    <Content Include="Areas\UserArea\Views\_viewstart.cshtml" />
+    <Content Include="Areas\UserArea\Views\UserNews\GetAllNews.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\getAllRegisters.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\Register.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Attendence\GetAttendence.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Attendence\GetCourseStudents.cshtml" />
+    <Content Include="Areas\AdminArea\Views\Reports\ShowCoursesReport.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\LoginUser.cshtml" />
+    <Content Include="Areas\UserArea\Views\Home\profile.cshtml" />
+    <Content Include="Areas\UserArea\Views\UserCourse\GetAllCourses.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-printme.min.js" />
+    <Content Include="Scripts\jquery.counterup.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jQuery.print.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.waypoints.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\perfect-scrollbar.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\slick.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\wow.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AdminArea\AdminAreaAreaRegistration.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\AdminController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\AttendenceController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\CourseController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\course_categoryController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\labController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\newsController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\news_typeController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\ParenterController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\qualificationController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\ReportsController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\ServiceController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\InstructorController.cs" />
+    <Compile Include="Areas\UserArea\Controllers\AboutUsPageController.cs" />
+    <Compile Include="Areas\UserArea\Controllers\HomeController.cs" />
+    <Compile Include="Areas\UserArea\Controllers\UserCourseController.cs" />
+    <Compile Include="Areas\UserArea\Controllers\UserNewsController.cs" />
+    <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\login.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminArea\Models\" />
+    <Folder Include="Areas\UserArea\Models\" />
+    <Folder Include="Models\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinalProject.BLL\FinalProject.BLL.csproj">
+      <Project>{51d8f798-96ab-4f12-94ec-81cb3f508b95}</Project>
+      <Name>FinalProject.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinalProject.DAL\FinalProject.DAL.csproj">
+      <Project>{ad61191c-1d89-449c-acf9-6dfa44791d23}</Project>
+      <Name>FinalProject.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

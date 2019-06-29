@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+
+@using FinalProject.BLL.ViewModels
+@model List<newsVM>
+@{
+    ViewBag.Title = "getAllNews";
+}
+
+<div class="container">
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary " />
+        <div id="edit">
+
+
+        </div>
+    </div>
+   
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <td>رقم الخبر</td>
+                <th>عنوان الخبر</th>
+                <th>التاريخ</th>
+                <th>تفاصيل الخبر</th>
+                <th>نوع الخبر</th>
+                <th>صورة الخبر</th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.news_id</td>
+                <td>@item.Title</td>
+                <td>@item.date</td>
+                <td>@item.description</td>
+                <td>@item.type_name</td>
+                <td>
+                <img src="/Images/@item.image" style="width: 20px; height:20px;" />
+                </td>
+                <td>@Html.ActionLink("حذف", "DeleteNews", "news", new { id = item.news_id }, new { @class = "btn btn-danger" })</td>
+                <td><input type="button" value="تعديل" onclick="cl(@item.news_id)" class="btn btn-primary" id="edit" /></td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit").load("/AdminArea/news/AddNews")
+                    })
+            })
+            function cl(id) {
+
+                $("#edit").load("/AdminArea/news/EditNews/" + id)
+            }
+        </script>
+    }
+</div>

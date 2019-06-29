@@ -1,0 +1,109 @@
+﻿@model  FinalProject.BLL.ViewModels.instructorVM
+@using FinalProject.BLL.ViewModels
+<div class="container">
+    <div class="container text-right" dir="rtl">
+        <div class="row">
+            <div class="col-2">
+                @*  @Html.ActionLink("اضافة مدرب", "AddInstructor", null, new { @class = "btn btn-primary" })*@
+                <input type="reset" id="btnAdd" value="اضافة مدرب" class="btn btn-primary" />
+            </div>
+        </div>
+        @if (ViewBag.Istructors != null)
+        {
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>اسم المدرب</th>
+                        <th>الجهه التابع لها</th>
+                        <th>المواضيع</th>
+                        <th>المؤهلات</th>
+                        <th>الموبايل</th>
+                        <th>تعديل</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.Istructors as List<instructorVM>)
+                    {
+                    <tr>
+                        <td>@item.instructor_name</td>
+                        <td>@item.NameOf_ItsUnit</td>
+                        <td>@item.TrainningTopic</td>
+                        <td>@item.Mobile</td>
+                        <td>@item.QualificationsName</td>
+
+                        <td>
+                            @Html.Hidden("Hiddenid", item.instructor_id)
+
+
+                            @*<input type="reset" id="btnSubmit" class="btn btn-primary" value="Submit" />
+
+
+         @Ajax.ActionLink("تعديل", "Edit", "Instructor",
+        new { id = @item.instructor_id },
+        new AjaxOptions { InsertionMode=InsertionMode.Replace,
+            UpdateTargetId= "myPartial2",
+            LoadingElementId= "divLoading"
+        }, new { @class = "btn btn-sucess" })*@
+
+                            <input type="button" value="تعديل" onclick="cl(@item.instructor_id)" class="btn btn-primary" id="btn-edit-instructor" />
+                            @*<input type="button" id="btnEdit" value="تعديل" class="btn btn-primary" />*@
+                        </td>
+                        
+                        <td>@Html.ActionLink("حذف", "delete", "Instructor", new { id = item.instructor_id }, new { @class = "btn btn-danger" })</td>
+
+                        @*<input type="button" id="btnDelete" value="حذف" class="btn btn-danger" />*@
+                        @*  @Html.ActionLink("حذف", "delete", "Instructor", new { id = @item.instructor_id, area = "AdminArea" }, new { @class = "btn btn-danger", onclick = "return confirm('Are You Sure To delete ?)" })*@
+                        
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+    </div>
+</div>
+
+@*<script src="~/Scripts/jquery-3.2.1.min.js"></script>*@
+@*<script src="~/Scripts/jquery-3.0.0.min.js"></script>*@
+@*<script src="~/Scripts/jquery-3.3.1.js"></script>*@
+@*<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+<script>
+    function cl(id) {
+        $("#myPartial").load("/AdminArea/Instructor/Edit/" + id)
+    }
+    $(document).ready(function () {
+
+        debugger;
+
+        //$("#btnEdit").on("click", function () {
+
+        //    let id = $("#Hiddenid").val();
+
+        //    $("#myPartial").load("/AdminArea/Instructor/Edit/" + id)
+        //})
+        $("#btnAdd").on("click", function () {
+            debugger;
+            $("#myPartial").load("/AdminArea/Instructor/AddInstructor/")
+        })
+
+        //$("#btnDelete").click(function () {
+        //    debugger;
+        //    let data = $("#Hiddenid").val();
+
+        //    $.ajax({
+        //        type: "POST",
+        //        data: data,
+        //        url: "/AdminArea/Instructor/delete/" + data,
+        //        success: function (response) {
+
+        //            alert("data deleted");
+
+        //        }
+
+        //    })
+        //})
+    })
+</script>

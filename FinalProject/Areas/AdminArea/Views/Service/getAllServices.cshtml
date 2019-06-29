@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "getAllServices";
+    Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+
+<h2>getAllServices</h2>
+@using FinalProject.BLL.ViewModels
+@model List<servicesVM>
+@{
+    ViewBag.Title = "getAllNews";
+}
+
+<div class="container">
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary " />
+        <div id="edit">
+
+
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+
+                <th>اسم القسم </th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.service_name</td>
+                    <td>@Html.ActionLink("حذف", "DeleteService", "Service", new { id = item.service_id }, new { @class = "btn btn-danger" })</td>
+                    <td><input type="button" value="تعديل" onclick="cl(@item.service_id)" class="btn btn-primary" id="edit" /></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit").load("/AdminArea/Service/AddServicee")
+                    })
+            })
+            function cl(id) {
+
+                $("#edit").load("/AdminArea/Service/EditService/" + id)
+            }
+        </script>
+    }
+</div>

@@ -1,0 +1,73 @@
+﻿@model List<FinalProject.BLL.ViewModels.parenterVM>
+@{
+    ViewBag.Title = "getparenters";
+}
+
+<div class="container">
+
+
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_parenter_btn" class="btn btn-primary " />
+        <div id="edit">
+
+        </div>
+    </div>
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+                <th>اسم العميل</th>
+                <th>رقم الهاتف </th>
+                <th>رقم المحمول</th>
+                <th>البريد الالكتروني</th>
+                <th>الصورة</th>
+                <th>حذف</th>
+                <th>تعديل</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.parenter_name</td>
+                    <td>@item.phone</td>
+                    <td>@item.Mobile</td>
+                    <td>@item.email</td>
+                    <td><img src="~/Images/@item.image" style="width:100px;height:100px"/></td>
+                    <td>@Html.ActionLink("حذف", "remove", "Parenter", new { id = item.parenter_id}, new { @class = "btn btn-danger" })</td>
+                    <td> <input type="button" value="تعديل" class="btn btn-primary" id="btn-edit-parenter" onclick="showform(@item.parenter_id)" /></td>
+                </tr>
+
+
+            }
+
+        </tbody>
+
+    </table>
+    @section scripts
+    {
+        <script>
+            $(document).ready(function () {
+                $("#add_parenter_btn").click(function () {
+
+                    $("#edit").load("/AdminArea/Parenter/Addparenter")
+                    $("#add_parenter_btn").hide();
+
+
+                })
+
+            })
+            function showform(id) {
+
+                $("#edit").load("/AdminArea/Parenter/editparenter/" + id)
+                $("#add_parenter_btn").hide();
+            }
+
+
+        </script>
+
+    }
+
+</div>

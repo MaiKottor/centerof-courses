@@ -1,0 +1,35 @@
+﻿@model FinalProject.BLL.ViewModels.CourseVM
+
+@{
+    Layout = null;
+}
+
+<form class="content-form" method="post">
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.course_name, new { @class= "form-control" })
+        @Html.TextBoxFor(a => a.course_name, new { @class= "form-control" })
+    </div>
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.description, new { @class = "form-control" })
+        @Html.TextBoxFor(a => a.description, new { @class = "form-control" })
+    </div>
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.hours_number, new { @class = "form-control" })
+        @Html.TextBoxFor(a => a.hours_number, new { @class = "form-control" })
+    </div>
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.appointments, new { @class = "form-control" })
+        @Html.TextBoxFor(a => a.appointments, new { @class = "form-control" })
+    </div>
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.price, new { @class = "form-control" })
+        @Html.TextBoxFor(a => a.price, new { @class = "form-control" })
+    </div>
+    <div class="form-group row ">
+        @Html.LabelFor(a => a.starting_date, new { @class = "form-control" })
+        @Html.TextBoxFor(a => a.starting_date, new { @class = "form-control" })
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+</form>

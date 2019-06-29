@@ -1,0 +1,119 @@
+﻿@model FinalProject.BLL.ViewModels.instructorVM
+
+@{
+    ViewBag.Title = "اضافة مدرب جديد";
+}
+<form id="myForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"><label>اسم المدرب</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.instructor_name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.instructor_name)
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>الوحدة التابع لها</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.NameOf_ItsUnit, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.NameOf_ItsUnit)
+            </div>
+            <div class="col-2">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المواضيع</label></div>
+            <div class="col-4">
+                @Html.TextAreaFor(x => x.TrainningTopic, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.TrainningTopic, null, new { @class = "validation-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.TrainningTopic, null, new { @class = "validation-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المسمى الوظيفى</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.Current_JobTitle, new { @class = "form-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Current_JobTitle, null, new { @class = "validation-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>البريد الالكترونى</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Email, null, new { @class = "validation-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>الموبايل</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.Mobile, new { @class = "form-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.Mobile, null, new { @class = "validation-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>التليفون</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.phone, new { @class = "form-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.phone, new { @class = "validation-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"><label>المؤهلات</label></div>
+            <div class="col-4">
+                @Html.TextBoxFor(x => x.QualificationsName, new { @class = "form-control" })
+            </div>
+            <div class="col-2">
+                @Html.ValidationMessageFor(x => x.QualificationsName, new { @class = "validation-control col-sm-2" })
+            </div>
+        </div>
+        <div> <input type="reset" value="حفظ" id="btnSubmit" class="btn btn-primary" /></div>
+    </div>
+</form>
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <div id="divLoader" style="display:none">
+            <img src="~/Images/loader2.gif" width="100px" height="100px" />
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+
+@*<script src="~/Scripts/jquery-3.2.1.min.js"></script>*@
+@section Script{
+    <script>
+        $(function () {
+            $("#btnSubmit").click(function () {
+                $("#divLoader").show();
+                var data = $("#myForm").serialize();
+                $.ajax({
+                    type: "POST",
+                    data: data,
+                    url: "/AdminArea/Instructor/AddInstructor",
+                    success: function (response) {
+                        $("#divLoader").hide();
+                        alert("data inserted");
+                    }
+
+                })
+            })
+
+
+        })
+
+
+    </script>
+}

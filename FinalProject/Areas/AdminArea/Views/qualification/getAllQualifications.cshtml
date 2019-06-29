@@ -1,0 +1,67 @@
+﻿
+@{
+                /**/
+
+                ViewBag.Title = "getAllQualifications";
+                Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+
+<h2>getAllQualifications</h2>
+@using FinalProject.BLL.ViewModels
+@model List<qualificationVM>
+@{
+    ViewBag.Title = "getAllNews";
+}
+
+<div class="container">
+    <div class="container courses-container text-right">
+        <input type="button" value="اضافه" id="add_course_btn" class="btn btn-primary " />
+        <div id="edit">
+
+
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-light text-right">
+        <thead class="thead-dark">
+            <tr>
+
+                <th>اسم المؤهل </th>
+                <th> تاريخ المؤهل </th>
+                <th> اسم المنظمة </th>
+                <th>حذف</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+
+                <td>@item.qualification_name</td>
+                <td>@item.qualification_date</td>
+                <td>@item.organization</td>
+                <td>@Html.ActionLink("حذف", "DeleteQualificaions", "qualification", new { id = item.qualification_id }, new { @class = "btn btn-danger" })</td>
+                <td><input type="button" value="تعديل" onclick="cl(@item.qualification_id)" class="btn btn-primary" id="edit" /></td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                    $("#add_course_btn").click(function () {
+                        $("#edit").load("/AdminArea/qualification/AddNewQualification")
+                    })
+            })
+            function cl(id) {
+
+                $("#edit").load("/AdminArea/qualification/EditQualificationa/" + id)
+            }
+        </script>
+    }
+</div>
+
